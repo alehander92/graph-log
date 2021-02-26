@@ -306,7 +306,7 @@ impl Display {
     // let text = &text_clone;
     let result = self.terminal.draw(|frame| {
       let size = frame.size();
-      let default_color = Color::Black;
+      let default_color = Color::White;
       let canvas = Canvas::default()
         .block(Block::default().borders(Borders::ALL).title("example"))
         .x_bounds([0.0, 100.0])
